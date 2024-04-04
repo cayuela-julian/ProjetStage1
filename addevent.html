@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Site de Gestion d'assocation </title>
+		<link rel="stylesheet" type="text/css" href="style.css" id="mycss">
+		<script src="script.js">
+		</script>
+	</head>
+	<body>
+		<nav>
+			<ul class="menu2">
+				<li class="sous"><a href="accueilconnecter.html">Espace Client</a>
+					<ul class="deroulant">
+						<li><a href="accueilconnecter.html">Accueil</a></li>
+						<li><a href="profil.html">Mon Profil</a></li>
+						<li><a href="inscriptionasso.html">Inscription Association</a></li>
+						<li><a href="mesasso.html">Mes Associations</a></li>
+					</ul></li>
+				<li><a href="accueil.html">Déconnexion</a></li>
+			</ul>
+		</nav>
+		<h1> Ajouter un évenement </h1>
+		<div class="box3">
+		<form method="post">
+			<div>
+				<label for="nom">Nom evenement:</label>
+				<input type="text" id="nom_event" name="event_nom" >
+			</div>
+			</br>
+			<div>
+				<label for="date">Date evenement:</label>
+				<input type="date" id="date" name="event_date" >
+				<input type="date" id="date" name="event_date" d>
+			</div>
+			</br>
+			<div>
+				<label for="mail">Quel public ?:</label>
+				<select name="public_event" id="public_event" >
+					<option value="open">Tout public</option>
+					<option value="membre">Membres</option>
+					<option value="membre_dirig">Membres + Dirigeant</option>
+					<option value="dirig">Dirigeants</option>
+				</select>
+			</div>
+			</br>
+			<div>
+				<label for="tel">Catégorie evenementt :</label>
+				<select name="categ_event" id="categ_event" >
+					<option value="réu">Réunion</option>
+					<option value="eventext">Evenement extérieur</option>
+					<option value="petitprince">Séminaire</option>
+				</select>
+			</div>
+				<label for="tel">Description evenement :</label>
+				<textarea name="message" rows="5" cols="20"></textarea>
+			 <div class="button">
+				<button type="submit"><a href="eventajt.html">Ajouter</button></a> <button type="submit"><a href="calendrier.html">Retour</button></a>
+			</div>
+		</form>
+		</div>
+	</body>
+</html>
